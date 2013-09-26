@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="sinaads_kw" content="新浪,测试,统一脚本,关键词定向">
+        <meta name="sinaads_tpl" content="模版定向">
+        <style>
+            html, body{
+                padding:0px;
+                margin:0px;
+            }
+        </style>
+        <script async charset="utf-8" src="./release/sinaads.js"></script>
+    <script>
+        var sinaadsPerloadData = [
+            'PDPS000000042135'
+        ];
+    </script>
+    <!-- 配置特殊格式的广告媒体类型 -->
+    <script>
+        // var sinaadsRenderHandler = {
+        //     'tip' : function (element, width, height, content, monitor, config) {
+        //         var RESOURCE_URL = './src/plus/TipsMedia.js';
+        //         sinaadToolkit.sio.loadScript(RESOURCE_URL, function () {
+        //             new sinaadToolkit.TipsMedia(element, {
+        //                 width : width,
+        //                 height : height,
+        //                 src : content.src,
+        //                 type : content.type,
+        //                 link : content.link,
+        //                 monitor : monitor,
+        //                 autoShow : 1,
+        //                 top : config.sinaads_tip_top || 0
+        //             });
+        //         });
+        //     },
+        //     'follow' : function (element, width, height, content, monitor, config) {
+        //         var RESOURCE_URL = sinaadToolkit.RESOURCE_URL + '/src/plus/FollowMedia.js';
+        //         sinaadToolkit.sio.loadScript(RESOURCE_URL, function () {
+        //             new sinaadToolkit.FollowMedia({
+        //                 main : {
+        //                     width : width,
+        //                     height : height,
+        //                     src : content.src[0] || '',
+        //                     type : content.type[0] || '',
+        //                     link : content.link[0] || '',
+        //                     top : config.sinaads_follow_top || 0
+        //                 },
+        //                 mini : {
+        //                     src : content.src[1] || '',
+        //                     type : content.type[1] || '',
+        //                     link : content.link[1] || content.link[0] || '',
+        //                     top : config.sinaads_follow_mini_top || 'bottom'
+        //                 },
+        //                 monitor : monitor,
+        //                 delay : config.sinaads_ad_delay || 0,
+        //                 duration : config.sinaads_ad_duration || 5
+        //             });
+        //         });
+        //     }
+        // };
+    </script>
+    <script src="./data/testdata.js"></script>
+    </head>
+    <body>
+        <div style="margin:0px auto;width:1000px;">
+            <style>
+                h2{
+                    clear:both;
+                }
+                .textlink{
+                    overflow:hidden;
+                }
+                .textlink li{
+                    float:left;
+                    width: 120px;
+                    overflow:hidden;
+                    text-align: center;
+                    list-style: none;
+                    margin:5px;
+                }
+                .textlink a:link,
+                .textlink a:visited{
+                    color:#333;
+                    display:block;
+                    line-height: 24px;
+                    font-size:14px;
+                    text-decoration: none;
+                }
+                .textlink a:hover{
+                    text-decoration:underline;
+                }
+
+                .zhitou{
+                    display:block;
+                    line-height:30px;
+                    font-size:14px;
+                }
+            </style>
+            <h2>翻牌广告</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000000100"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+            <h2>blog-tip广告</h2>
+            <div>
+                <div style="width:120px;height:50px;overflow:hidden;float:left;">
+                    <ins class="sinaads" data-ad-pdps="PDPS000000033238"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({
+                            params : {
+                                sinaads_tip_top : 20
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <h2>blog-随行广告</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000025949"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({
+                        params : {
+                            sinaads_follow_top : 40,
+                            sinaads_follow_mini_top : 200
+                        }
+                    });
+                </script>
+            </div>
+
+            <h2>文字链</h2>
+            <ul class="textlink">
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000081"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000082"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000083"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000084"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000085"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000086"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000087"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+                <li>
+                    <ins class="sinaads" data-ad-pdps="PDPS000000000088"></ins>
+                    <script>
+                        (sinaads = window.sinaads || []).push({});
+                    </script>
+                </li>
+            </ul>
+
+
+            <h2>智投文字链</h2>
+            <div class="zhitou">
+                <ins class="sinaads" data-ad-pdps="PDPS000000000050"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({
+                        params : {
+                            sinaads_ad_tpl : '<a class="zhitou" href="#{link}" target="_blank" onclick="#{monitor}">#{src}</a>'
+                        }
+                    });
+                </script>
+            </div>
+
+            <h2>全屏</h2>
+            <script>
+                document.write('<span id="FullScreenWrap"></span>');
+            </script>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000000067" data-ad-delay="6"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({
+                        params : {
+                            sinaads_fullscreen_close : 0
+                        }
+                    });
+                </script>
+            </div>
+
+
+            <h2>乐居/普通-2轮播通栏1000*90</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000047211"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+            <!-- <h2>乐居/普通-2轮播跨栏1000*90</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000006450"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div> -->
+
+
+            <h2>画中画300*500</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000042135"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+
+            <h2>背投</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000004993"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+            <h2>对联</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000000070"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({
+                        params : {
+                            sinaads_float_top : 350
+                        }
+                    });
+                </script>
+            </div>
+
+            <h2>流媒体</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000000066" data-ad-delay="2"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+            <h2>视窗</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000000068" data-ad-delay="4"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+            <!-- 脚本发生未指明的错误 -->
+            <!-- <h2>300*250 adbox，url, image, flash  4轮播</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000004452"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+ -->
+            <!-- http://m.kejet.net/ms/13618/2a8780b45.swf
+
+            http://aw.kejet.net/u/sn/r?f=sina&p=tjLHPGUBTUej0L9gg6Ri0DeSdAvSvUDpjicfxQ%%E2%80%A6&d=mcf&t=GhoVEHOxOsnxQY/SDfWm2Q==&v=1377150963&m=Quf&y=8S-PDPS000000005486 -->
+
+            <!-- html 片段 -->
+            <h2>html</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000005486"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+
+            <!-- 崩溃 -->
+            <!-- taobao network 广告 -->
+            <!-- <h2>network taobao</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000037694"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div> -->
+
+            <!-- http://d3.sina.com.cn/litong/zhitou/union/tanx.html?pid=mm_15890324_3509534_11501995&w=186&h=275
+ -->
+            <!-- google network 广告 -->
+            <h2>network google</h2>
+            <div>
+                <ins class="sinaads" data-ad-pdps="PDPS000000003271"></ins>
+                <script>
+                    (sinaads = window.sinaads || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <script>
+            //document.domain = 'sina.com.cn';
+        </script>
+        
+        <!--新闻中心轮播新浪视窗广告结束-->
+    </body>
+</html>
